@@ -84,3 +84,42 @@ while fibo < num_2:
     fibo += 1
 
 print("\nLoop is ended.")    
+
+#Check prime number:-
+num_3 = int(input("Enter your number :"))
+
+if(num_3 > 1):
+    is_prime = True
+
+    for k in range(2, num_3):
+        if num_3 % k == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print(num_3,"is a prime number.")
+    else:
+        print(num_3,"is not a prime number.")
+
+else:
+    print(num_3,"is not a prime number")                 
+
+#Print all prime numbers in a range:-
+start = int(input("Enter your starting number :"))
+end = int(input("Enter your ending :"))
+
+print("Prime numbers are :")
+
+for l in range(start, end + 1):
+    if(l > 1):
+        prime = True
+
+        for m in range(2, l):
+            if l % m == 0:
+                prime = False
+                break
+
+        if prime:
+            print(l)    
+
+print("---------------THANKS FOR USEING ME---------------")            
