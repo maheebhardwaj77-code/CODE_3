@@ -4,3 +4,5 @@ if(a >= 10):
     print("PASS")
 else :
     print("FAIL")    
+
+print("Thank you for using")
